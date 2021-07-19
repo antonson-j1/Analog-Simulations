@@ -1,0 +1,11 @@
+* E:\DESKTOP IN HDD\Acads\analog\Simulation Files\opamp_bistable.asc
+XU1 N001 in ps ns out ua741
+R1 N001 0 10k
+R2 out N001 40k
+Vtriang in 0 PULSE(-3 3 0 1m 1m 0.001m 2m)
+vdd ps 0 12
+vss ns 0 -12
+.tran 3m
+.include ua741.txt
+.backanno
+.end
